@@ -1,0 +1,373 @@
+/* For Google Chrome (125% zoom level) */
+@media screen and (-webkit-min-device-pixel-ratio: 1.25),
+screen and (min-resolution: 120dpi) {}
+
+@media (max-width: 1199px) {
+    div#navbarNav {
+        display: none;
+    }
+
+    .navbar-dark .navbar-toggler {
+        height: 40px;
+        width: 40px;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--secondary);
+    }
+}
+
+
+
+@media (max-width: 991px) {
+
+    .footer-top .btn-main {
+        display: none;
+    }
+
+    section.contact-form .aurthor-2-img {
+        display: none;
+    }
+
+    .contact-heading {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-aurthor-2-heading {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-2-content {
+        padding-bottom: 40px;
+        padding-left: 0;
+    }
+
+    .aurthor-section-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-heading {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 40px;
+
+    }
+
+    .hero-section.other-hero {
+        background-size: 110% 120%;
+    }
+
+    .blog-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-img.img-box {
+        width: 100%;
+        height: 380px;
+    }
+
+    .contact-form-content {
+        margin-bottom: 30px;
+    }
+
+    .about-aurthor-02-content-main {
+        padding: 20px;
+        padding-top: 50px;
+    }
+
+    .book-2-content:after {
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+    }
+
+
+    section.book-2 .row {
+        flex-direction: column-reverse;
+    }
+
+    .book-2-content-main-content {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-aurthor-02-content {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    p.aurthor-2-detail {
+        text-align: center;
+    }
+
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .author-bg {
+        margin: 0;
+    }
+
+    .author-bg {}
+
+    .author-bg .row {
+        gap: 20px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bg-contact-form {
+        margin: 0;
+    }
+
+    .hero-img.img-box-content {
+        /* display: none; */
+        margin-bottom: 20px;
+    }
+
+    .text-img {
+        max-width: 260px;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-aurthor-content {
+        text-align: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-book-content {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .hero .row {
+        flex-direction: row-reverse;
+    }
+
+    .hero-section .row {
+        flex-direction: column-reverse;
+    }
+
+    .amazone-book-content {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .amazone-book-content h4:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .news_card_content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .thank-you-content {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .thank-you-content h1 {
+        font-size: 60px;
+        color: white;
+        font-family: var(--font-700);
+    }
+
+    img.dragon-img.animate-up {
+        display: none;
+    }
+
+    img.book-daragon.animate-up {
+        display: none;
+    }
+
+    .blog-main {
+        flex-direction: column;
+    }
+
+    section#home .row {
+        flex-direction: row-reverse;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .about-heading h2:before {
+        content: none;
+    }
+
+    .about-heading h2:after {
+        content: none;
+    }
+
+    .sec-01-heading {
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .books-box img {
+        width: 100%;
+    }
+
+    .sec-five .sec-five-inner .sec-five-card {
+        flex: 0 0 320px;
+    }
+
+    .sec-five .sec-five-inner {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .hero-content-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-aurthor-content-row {
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-trailer-container {
+        margin: 0;
+    }
+
+    .book-trailer-heading {
+        border: 0;
+        padding: 0;
+    }
+
+    .blog-card-content {}
+
+    .testi .row {
+        justify-content: center;
+    }
+
+    .subscribe-sec .subscribe-left h3 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .subscribe-sec .subscribe-left p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form.aos-init {}
+
+    form.aos-init .btn-theme {
+        max-width: 160px;
+        margin: 0 auto;
+    }
+
+    .testi-heading {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-subscribe {
+        /* border: 0; */
+        /* margin: 0; */
+    }
+
+    .faq h2.main-heading {
+        font-size: 41px;
+    }
+
+    ul.footer-link li {
+        margin-top: 25px;
+    }
+
+    .footer-top {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    ul.footer-link {
+        display: block;
+    }
+
+    .feather-img {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    header.sticky {
+        transform: translateY(-0px);
+    }
+
+    .review-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sec-five .sec-five-inner .sec-five-card {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .btn-main {
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .about-aurthor-content {
+        margin-top: 20px;
+    }
+
+    .strategy-cards-main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+
+}
