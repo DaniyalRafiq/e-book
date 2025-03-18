@@ -103,7 +103,21 @@
     <?php include 'footer.php' ?>
     <!-- end -->
 
+    <!-- <script>
+        var navTl = gsap.timeline()
 
+        navTl.from(".header", {
+            opacity: 0,
+            stagger: .1
+        })
+        navTl.from(".header-stagger", {
+            y: -400,
+            opacity: 0,
+            duration: 1,
+            delay: 0,
+            stagger: .1
+        })
+    </script> -->
 </body>
 
 </html>

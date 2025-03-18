@@ -183,38 +183,278 @@ posterOverlay.addEventListener('click', () => {
 
 
 // document.addEventListener("DOMContentLoaded", function () {
-//   gsap.from(".hero-content h1", {
-//     opacity: 0,
-//     y: 50,
-//     duration: 1,
-//     ease: "power2.out"
-//   });
-
-//   gsap.from(".hero-content p", {
-//     opacity: 0,
-//     y: 30,
-//     duration: 1,
-//     delay: 0.3,
-//     ease: "power2.out"
-//   });
-
-//   gsap.from(".theme-btn", {
-//     opacity: 0,
-//     scale: 0.8,
-//     duration: 0.8,
-//     delay: 0.6,
-//     ease: "back.out(1.7)"
-//   });
-
-//   gsap.from(".hero-img img", {
-//     opacity: 0,
-//     scale: 0.8,
-//     duration: 1.2,
-//     delay: 0.5,
-//     ease: "elastic.out(1, 0.75)"
-//   });
 
 
 // });
-\
+
+
+// gsap.from(".hero-content h1", {
+//   opacity: 0,
+//   x: -50,
+//   duration: 3,
+
+// });
+// gsap.from(".hero-content p", {
+//   opacity: 0,
+//   x: -50,
+//   duration: 2,
+//   delay: 1,
+
+// });
+// gsap.from(".hero-content .theme-btn", {
+//   opacity: 0,
+//   y: 500,
+//   duration: 2,
+//   delay: 0,
+//   yoyo: true,
+//   repeat: -1,
+// });
+
+
+var heroTl = gsap.timeline()
+var navTl = gsap.timeline()
+
+
+
+
+navTl.from(".header-stagger", {
+  y: -400,
+  opacity: 0,
+  duration: 1,
+  delay: 0,
+  stagger: .1
+})
+// navTl.from(".header-stagger", {
+//   y: -400,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 0,
+//   stagger: .1
+// })
+// navTl.from(".header-stagger", {
+//   y: -400,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 0,
+//   stagger: .3
+// })
+
+heroTl.from(".hero-content h1", {
+  opacity: 0,
+  x: -50,
+  duration: .2,
+  delay: 1
+})
+heroTl.from(".hero-content p", {
+  opacity: 0,
+  x: -50,
+  duration: .5,
+
+})
+heroTl.from(".hero-content .hero-btn-main", {
+  opacity: 0,
+  y: 500,
+  duration: .5,
+})
+gsap.from(" .hero-img", {
+  opacity: 0,
+  scale: .3,
+  y: 50,
+  delay: 1.4,
+  duration: 1,
+
+})
+var aurthorTl = gsap.timeline()
+
+
+gsap.from(".aurthor-section-content h2", {
+  opacity: 0,
+  y: 200,
+  delay: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".aurthor-section-content", // Element that triggers the animation
+    // scroller: "body",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+  }
+});
+
+gsap.from(".aurthor-section-content p", {
+  opacity: 0,
+  y: 200,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".aurthor-section-content", // Element that triggers the animation
+    // scroller: "body",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+  }
+})
+gsap.from(".author-img.img-box", {
+  opacity: 0,
+  scale: .3,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".aurthor-section-content", // Element that triggers the animation
+    // scroller: "body",
+    scrub: 1, // ✅ Smooth animation on scroll
+    end: "top center",
+    start: "top bottom",
+
+  }
+})
+gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
+
+const afterRule = CSSRulePlugin.getRule(".aurthor-section-main::after");
+
+gsap.to(afterRule, {
+  width: "100%", // ✅ Expand width to 100%
+  height: "100%",
+  duration: 5,
+  borderRadius: "0%", // ✅ Remove circle shape
+  scrollTrigger: {
+    trigger: ".aurthor-section-main",
+    // scroller: "body",
+    markers: true,
+    start: "top 80%",
+    end: "top center",
+    scrub: 3, // ✅ Smooth animation on scroll
+
+  }
+});
+
+gsap.from(".about-book .main-heading-center", {
+  opacity: 0,
+  scale: 0.9,
+  y: 50,
+  textShadow: "5px 19px 4px #c9c9c9",
+  rotateX: 57, // ✅ Added rotateX transformation
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".about-book .main-heading-center",
+    end: "top center",
+    scrub: 1,
+    start: "top bottom",
+  },
+
+});
+
+gsap.from(".img-box-content", {
+  opacity: 0,
+  y: 100,
+  duration: 1,
+
+  scrollTrigger: {
+    trigger: "section.about-book .row", // Element that triggers the animation
+    // scroller: "body",
+    scrub: 1, // ✅ Smooth animation on scroll
+
+    start: "top 100%",
+    end: "bottom 100%",
+  }
+})
+
+gsap.from(".about-book-stagger", {
+  opacity: 0,
+  x: 100,
+  duration: 1,
+  stagger: 2,
+
+  scrollTrigger: {
+    trigger: ".about-book .row", // Element that triggers the animation
+    // scroller: "body",
+    scrub: 1, // ✅ Smooth animation on scroll
+
+    start: "top 100%",
+    end: "bottom 100%",
+  }
+});
+
+// gsap.from(".about-book-card-1", {
+//   opacity: 0,
+//   y: 200,
+//   duration: .3,
+//   scrollTrigger: {
+//     trigger: ".about-book-cards-main", // Element that triggers the animation
+//     // scroller: "body",
+//     end: "top center",
+//     scrub: 1,
+//     start: "top bottom",
+//     scrub: true,
+//   }
+// });
+// gsap.from(".about-book-card-2", {
+//   opacity: 0,
+//   y: 200,
+//   delay: 0.2,
+//   duration: .3,
+//   scrollTrigger: {
+//     trigger: ".about-book-cards-main", // Element that triggers the animation
+//     // scroller: "body",
+//     end: "top center",
+//     scrub: 1,
+//     start: "top bottom",
+//     scrub: true,
+//   }
+// });
+// gsap.from(".about-book-card-3", {
+//   opacity: 0,
+//   delay: 0.3,
+//   y: 200,
+//   duration: .3,
+//   scrollTrigger: {
+//     trigger: ".about-book-cards-main", // Element that triggers the animation
+//     // scroller: "body",
+//     end: "top center",
+//     scrub: 1,
+//     start: "top bottom",
+//     scrub: true,
+//   }
+// });
+gsap.from(".about-book-card", {
+  opacity: 0,
+  y: 200,
+  // delay: ,
+  duration: .3,
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".about-book-card", // Element that triggers the animation
+    // scroller: "body",
+    end: "top center",
+    start: "top bottom",
+  }
+});
+
+
+// gsap.from(".hero-content h1", {
+//   opacity: 0,
+//   x: -50,
+//   duration: .5,
+//   delay: 0
+// })
+// gsap.from(".hero-content p", {
+//   opacity: 0,
+//   x: -50,
+//   duration: .5,
+
+//   delay: .1
+// })
+// gsap.from(".hero-content .hero-btn-main", {
+//   opacity: 0,
+//   y: 500,
+//   duration: .5,
+//   delay: .2
+// })
+// gsap.from(" .hero-img", {
+//   opacity: 0,
+//   scale: .3,
+//   y: 50,
+//   duration: .5,
+
+//   delay: .3
+// })
+
 

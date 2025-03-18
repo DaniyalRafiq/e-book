@@ -18,48 +18,50 @@ $page = basename($_SERVER['PHP_SELF'], '.php');
     <nav class="navbar navbar-expand-xl navbar-dark stroke bg-transparent">
         <div class="container">
             <div class="header-bottom">
-                <a class="navbar-brand" href="index">
-                    <img src="assets/images/logo.png" />
-                </a>
+                <div class="header-img header-stagger">
+                    <a class="navbar-brand" href="index">
+                        <img src="assets/images/logo.png" />
+                    </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <div class="collapse navbar-collapse navbar-main " id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item header-stagger">
                             <a class="nav-link <?php if ($page == 'index') {
                                                     echo 'active';
                                                 } ?>" href="index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header-stagger">
                             <a class="nav-link <?php if ($page == 'about-author') {
                                                     echo 'active';
                                                 } ?>" href="about-author">About the Author</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item header-stagger">
                             <a class="nav-link <?php if ($page == 'book') {
                                                     echo 'active';
                                                 } ?>" href="book">
                                 Books
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header-stagger">
                             <a class="nav-link <?php if ($page == 'blogs') {
                                                     echo 'active';
                                                 } ?>" href="blogs">
                                 Blogs
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header-stagger">
                             <a class="nav-link <?php if ($page == 'testimonials') {
                                                     echo 'active';
                                                 } ?>" href="testimonials">
                                 Testimonials
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header-stagger">
                             <a class="nav-link <?php if ($page == 'contact-us') {
                                                     echo 'active';
                                                 } ?>" href="contact-us">
@@ -70,7 +72,7 @@ $page = basename($_SERVER['PHP_SELF'], '.php');
                     </ul>
                     <div class="my-2 my-lg-0 d-xl-block d-none">
                         <!-- From Uiverse.io by zjssun -->
-                        <button class="theme-btn">
+                        <button class="theme-btn header-stagger">
                             Order Now
                         </button>
                     </div>

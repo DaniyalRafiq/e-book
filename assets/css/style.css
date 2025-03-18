@@ -508,7 +508,7 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   cursor: pointer;
   background-color: var(--primary);
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   border: 2px solid var(--primary);
   font-size: 15px;
   display: inline-block;
@@ -1049,7 +1049,9 @@ ul.footer-link li a:hover {
 
 .aurthor-section-main {
   padding: 40px 45px;
-  background: #D4F1F9;
+  /* background: #D4F1F9; */
+  overflow: hidden;
+  position: relative;
 }
 
 section.aurthor-section {
@@ -1532,7 +1534,7 @@ section.hero-section.other-hero .hero-content h1 {
   width: 100%;
 }
 
-
+/* 
 
 .fade-animation {
   animation: BoxRotateanimation both;
@@ -1548,7 +1550,7 @@ section.hero-section.other-hero .hero-content h1 {
 
   }
 
-  100%{
+  100% {
     transform: translateY(0px) scale(1);
     opacity: 1;
   }
@@ -1574,4 +1576,23 @@ section.hero-section.other-hero .hero-content h1 {
     opacity: 1;
 
   }
-} */
+ */
+.aurthor-section-main::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: .6;
+  transform: translate(-50%, -50%);
+  background: var(--primary-light);
+  height: 100%;
+  /* Start from 0 */
+  width: 50%;
+  /* Start from 0 */
+  /* Circle shape */
+}
+
+.aurthor-section-main>* {
+  position: relative;
+  z-index: 4;
+}

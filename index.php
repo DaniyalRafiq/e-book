@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <!-- header -->
     <?php include 'header.php' ?>
     <!-- End header -->
@@ -30,9 +31,12 @@
                         <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex econsequat.</p>
                         <!-- From Uiverse.io by gharsh11032000 -->
                         <!-- From Uiverse.io by zjssun -->
-                        <a href="#" class="theme-btn">
-                            Learn More
-                        </a>
+                        <div class="hero-btn-main">
+                            <a href="#" class="theme-btn">
+                                Learn More
+                            </a>
+
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-12">
@@ -91,16 +95,16 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="about-book-content">
-                        <h3>Faucibus nunc molestie condimentum ut. Pharetra et vitae cras turpis</h3>
-                        <p>Lacus arcu quam ullamcorper vitae. Nisl urna pretium imperdiet varius nulla est netus amet eu. Eget habitant tempor tortor neque posuere viverra massa accumsan condimentum. Non non turpis vel quis. Urna pharetra lectus tempus gravida. Faucibus nunc molestie condimentum ut. Pharetra et vitae cras turpis vulputate turpis amet. Mauris in dui parturient sem lacinia pharetra molestie. Auctor velit amet et augue eget diam.</p>
-                        <p>Euismod sagittis eget praesent fringilla neque pretium. Lectus iaculis hendrerit ipsum pellentesque. Netus pellentesque cursus at et commodo ac nisl cras. Neque enim amet lectus neque ut commodo tellus facilisi. Amet nisl amet nec lacus. Commodo ultrices orci nunc scelerisque commodo dictumst id in. Fermentum ac enim accumsan </p>
+                        <h3 class="about-book-stagger">Faucibus nunc molestie condimentum ut. Pharetra et vitae cras turpis</h3>
+                        <p class="about-book-stagger">Lacus arcu quam ullamcorper vitae. Nisl urna pretium imperdiet varius nulla est netus amet eu. Eget habitant tempor tortor neque posuere viverra massa accumsan condimentum. Non non turpis vel quis. Urna pharetra lectus tempus gravida. Faucibus nunc molestie condimentum ut. Pharetra et vitae cras turpis vulputate turpis amet. Mauris in dui parturient sem lacinia pharetra molestie. Auctor velit amet et augue eget diam.</p>
+                        <p class="about-book-stagger">Euismod sagittis eget praesent fringilla neque pretium. Lectus iaculis hendrerit ipsum pellentesque. Netus pellentesque cursus at et commodo ac nisl cras. Neque enim amet lectus neque ut commodo tellus facilisi. Amet nisl amet nec lacus. Commodo ultrices orci nunc scelerisque commodo dictumst id in. Fermentum ac enim accumsan </p>
                     </div>
                 </div>
             </div>
             <div class="about-book-cards-main">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class="about-book-card">
+                        <div class="about-book-card about-book-card-1">
                             <span>Chapter- 01:</span>
                             <h4>Get Started Intro</h4>
                             <p>Lectus neque ut commodo tellus facilisi. Amet nisl amet nec lacus. Commodo ultrices orci nunc scelerisque commodo dictumst id in. Fermentum ac enim accumsan </p>
@@ -117,7 +121,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <div class="about-book-card">
+                        <div class="about-book-card about-book-card-2">
                             <span>Chapter- 01:</span>
                             <h4>Get Started Intro</h4>
                             <p>Lectus neque ut commodo tellus facilisi. Amet nisl amet nec lacus. Commodo ultrices orci nunc scelerisque commodo dictumst id in. Fermentum ac enim accumsan </p>
@@ -134,7 +138,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <div class="about-book-card">
+                        <div class="about-book-card about-book-card-3">
                             <span>Chapter- 01:</span>
                             <h4>Get Started Intro</h4>
                             <p>Lectus neque ut commodo tellus facilisi. Amet nisl amet nec lacus. Commodo ultrices orci nunc scelerisque commodo dictumst id in. Fermentum ac enim accumsan </p>
@@ -151,7 +155,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <div class="about-book-card">
+                        <div class="about-book-card about-book-card-4">
                             <span>Chapter- 01:</span>
                             <h4>Get Started Intro</h4>
                             <p>Lectus neque ut commodo tellus facilisi. Amet nisl amet nec lacus. Commodo ultrices orci nunc scelerisque commodo dictumst id in. Fermentum ac enim accumsan </p>
